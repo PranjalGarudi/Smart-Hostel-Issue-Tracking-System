@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | Smart Hostel</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <h2>Dashboard</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<!-- MAIN CONTENT -->
+<section class="issues-section">
+
+  <!-- ✅ SUMMARY CARDS (TOP) -->
+  <div class="summary-cards">
+    <div class="card">
+      <h4>Total Issues</h4>
+      <p id="totalIssues">1</p>
+    </div>
+    <div class="card">
+      <h4>Open</h4>
+      <p class="warn">1</p>
+    </div>
+    <div class="card">
+      <h4>Resolved</h4>
+      <p class="ok">0</p>
+    </div>
+  </div>
+
+  <!-- ✅ REPORT ISSUE BUTTON -->
+  <div style="margin: 20px 0; text-align: right;">
+    <button class="btn-primary" onclick="openReportIssue()">
+      ➕ Report New Issue
+    </button>
+  </div>
+
+  <!-- HEADER -->
+  <div class="issues-header">
+    <h2>🛠 My Issues</h2>
+    <span class="issue-count">
+      Total: <strong id="issueCount">0</strong>
+    </span>
+  </div>
+
+  <!-- ISSUES TABLE -->
+  <table class="issues-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Priority</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="issuesTable">
+      <!-- rows injected by issues.js -->
+    </tbody>
+  </table>
+
+</section>
+
+<!-- JS FILES -->
+<script src="js/dashboard.js"></script>
+<script src="js/issues.js"></script>
+
+<script>
+  function openReportIssue() {
+    alert('Report Issue form coming next 🚀');
+  }
+</script>
+
+</body>
+</html>

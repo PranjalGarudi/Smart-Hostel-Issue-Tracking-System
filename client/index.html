@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Hostel Issue Tracking System</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <h2>🏫 Smart Hostel</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Announcements</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Smart Hostel Issue Tracking System</h1>
+  <p>Recovery,manage and reslove issues</p>
+  <BR><BR></BR></BR>
+  
+  <a href="login.html" class="btn">Login to Dashboard</a>
+</section>
+
+<section class="announcements">
+  <h3>📢 Announcements</h3>
+  <ul>
+    <li>🚰 Water shutdown: 10 AM – 2 PM</li>
+    <li>⚡ Electrical maintenance tonight</li>
+  </ul>
+</section>
+
+<section class="categories">
+  <h3>Issue Categories</h3>
+
+  <div class="category-grid">
+
+    <div class="category-card" onclick="goToLogin()">
+      🚿
+      <h4>Plumbing</h4>
+      <p>Leaks, taps, washrooms</p>
+    </div>
+
+    <div class="category-card" onclick="goToLogin()">
+      💡
+      <h4>Electrical</h4>
+      <p>Lights, fans, wiring</p>
+    </div>
+
+    <div class="category-card" onclick="goToLogin()">
+      🧹
+      <h4>Cleanliness</h4>
+      <p>Rooms, washrooms, waste</p>
+    </div>
+
+    <div class="category-card" onclick="goToLogin()">
+      🌐
+      <h4>Internet</h4>
+      <p>Wi-Fi & connectivity</p>
+    </div>
+
+    <div class="category-card" onclick="goToLogin()">
+      🚨
+      <h4>Security</h4>
+      <p>Safety & access</p>
+    </div>
+
+    <div class="category-card emergency" onclick="goToLogin()">
+      🆘
+      <h4>Emergency</h4>
+      <p>Immediate attention</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function goToLogin() {
+    window.location.href = 'login.html';
+  }
+</script>
+
+<footer>
+  <p>© Smart Hostel Issue Tracking System</p>
+</footer>
+
+</body>
+</html>
